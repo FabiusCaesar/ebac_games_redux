@@ -1,7 +1,7 @@
-import { fireEvent, screen } from '@testing-library/react'
+import { screen, fireEvent } from '@testing-library/react'
 
 import Produto from '..'
-import { renderizaComProvider } from '../../../utils/testes'
+import { renderizaComProvider } from '../../../utils/tests'
 
 const jogo = {
   id: 2,
@@ -13,7 +13,7 @@ const jogo = {
   titulo: 'Hogwarts Legacy'
 }
 
-describe('Testes para o componetne produto', () => {
+describe('Testes para o componente produto', () => {
   test('Deve renderizar corretamente', () => {
     renderizaComProvider(<Produto game={jogo} />)
     expect(screen.getByText('Hogwarts Legacy')).toBeInTheDocument()

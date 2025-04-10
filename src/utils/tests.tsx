@@ -1,5 +1,5 @@
 import { PreloadedState } from '@reduxjs/toolkit'
-import { render, RenderOptions } from '@testing-library/react'
+import { RenderOptions, render } from '@testing-library/react'
 
 import { PropsWithChildren } from 'react'
 import { Provider } from 'react-redux'

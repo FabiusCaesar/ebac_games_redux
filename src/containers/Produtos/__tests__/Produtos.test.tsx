@@ -3,7 +3,7 @@ import { setupServer } from 'msw/node'
 import { screen, waitFor } from '@testing-library/react'
 
 import Produtos from '..'
-import { renderizaComProvider } from '../../../utils/testes'
+import { renderizaComProvider } from '../../../utils/tests'
 
 const mocks = [
   {
